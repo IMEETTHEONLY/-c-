@@ -1,0 +1,42 @@
+//#include <stdio.h>
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;   //*p用来储存地址叫做指针变量
+//	//printf("%p\n", &a);
+//	//printf("%p\n", p);//%p是取地址的意思
+//	*p = 20;     //用指针的方法来改变变量的大小
+//	printf("a=%d\n", a);
+//
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch = "w";
+//	char* p = &ch;
+//	//printf("%p\n", &ch);   //要找到所找变量的地址的时候打印要加上&
+//	//printf("%p\n", p);     //而p是指针变量已经是地址了不用加
+//	*p = 'a';
+//	printf("%c\n", ch);
+//
+//
+//	return 0;
+//}
+
+#include <stdio.h>
+int main()
+{
+
+	double d = 3.14;
+	double* pd = &d;     //pd是一个变量  叫做指针变量
+	*pd = 5.5;
+	printf("%lf\n", d);
+	printf("%lf\n", *pd);
+
+
+	return 0;
+}
