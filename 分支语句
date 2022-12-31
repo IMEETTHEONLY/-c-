@@ -1,0 +1,108 @@
+//#include <stdio.h>
+//int main()
+//{
+//	if (101 < 100)
+//		printf("真");
+//	else
+//		printf("假");
+//
+//		return 0;
+//}
+//
+
+
+
+////多分支
+//#include <stdio.h>
+//int main()
+//{
+//	int age = 54444444;
+//	
+//	if (age < 18)
+//		printf("未成年\n");
+//	else if (age >= 18 && age < 28)
+//		printf("青年\n");
+//	else if (age >= 28 && age < 50)
+//		printf("壮年\n");
+//	else if (age >= 50 && age < 90)
+//		printf("老年\n");
+//	else
+//		printf("老不死\n");
+//
+//
+//
+//
+//	return 0;
+//}
+
+
+
+//悬空else   else语法的应用问题
+//#include <stdio.h>
+//int main()
+//{
+//	int a = 1;
+//	int b = 2;
+//	if (a == 1)
+//	{
+//		if (b == 2)
+//
+//
+//			printf("hehe\n");
+//	}
+//	else
+//			printf("haha\n");    //else就近原则 选择一个最近的if作为他的if else，这里选择if（b==2），语句块从a==1那里就不执行了因为是错的，所以什么也不打印
+//	
+//
+//
+//
+//	return 0;
+//}
+//
+//
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int num = 4;
+//	if (num == 5)     /这里的=是赋值操作符   ==是判断操作符  赋值永远都是对的，所以说不能打错的
+//
+//		printf("呵呵\n");
+//	else
+//		printf("haha\n");
+//	
+//
+//
+//	return 0;
+//}
+
+//switch的使用
+#include <stdio.h>
+int main()
+{
+	int day = 0;
+	scanf_s("%d", &day);
+	switch (day)
+	{
+	case 1:
+		printf("星期一\n");
+	case 2:
+		printf("星期二\n");
+	case 3:
+		printf("星期三\n");
+	case 4:
+		printf("星期四\n");
+	case 5:
+		printf("星期五\n");
+	case 6:
+		printf("星期六\n");
+	case 7:
+		printf("星期天\n");
+	}
+
+
+
+
+	return 0;
+}
