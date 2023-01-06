@@ -1,0 +1,161 @@
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 10)
+//	{
+//		printf("%d\n", i);
+//		i++;
+//	}
+//
+//
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 10)
+//		
+//	{
+//		if (i == 5)              //判断条件只能放在括号呢，表示为循环语句
+//			break;				//注意==是判断符号   =是赋值符号
+//		printf("%d\n", i);
+//			i++;
+//	}
+//
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 10)
+//		
+//	{
+//		
+//		if (i == 5)              //判断条件只能放在括号呢，表示为循环语句
+//			continue;				//注意==是判断符号   =是赋值符号
+//		printf("%d\n", i);			//continue是结束continue以后的内容循环 之前的内容
+//		i++;
+//	}
+//
+//	return 0;
+//}
+
+
+
+
+//实例
+//#include <stdio.h>
+//int main()
+//{
+//	int ch = getchar();    //getchar与putchar的使用规则，put就会打印一次输入的东西
+//	putchar(ch);
+//	printf("%c\n", ch);
+//
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)             //crzl+z就是ZOF的意思，结束循环，不再putchar
+//	{
+//		putchar(ch);
+//	}
+//		
+//	return 0;
+//}
+
+
+
+
+//for循环
+
+//#include <stdio.h>
+//int main()
+//	
+//{	int i = 0;     //i=0与下面的i=1没有关系，以为i=0只是用来储存i的，0无所谓（可以为任何值）
+//		//初始化	//判断		//调整
+//	for (i = 1;i <= 10;i++)
+//	{
+//		printf("%d\n", i);
+//	}
+//
+//
+//	return 0;
+//}
+
+
+//for循环中braak的使用
+//#include <stdio.h>
+//int main()
+//
+//{
+//	int i = 0;     
+//	for (i = 1;i <= 10;i++)
+//	{
+//		if (i == 5)
+//			break;			//立即结束当前的循环，打印出来
+//		printf("%d\n", i);
+//	}
+//
+//
+//	return 0;
+//}
+
+
+//for中continue的使用
+//#include <stdio.h>
+//int main()
+//
+//{
+//	int i = 0;
+//	for (i = 1;i <= 10;i++)
+//	{
+//		if (i == 5)
+//			continue;			//与while中的continue不同的是，for的i++默认在前面
+//		printf("%d\n", i);
+//	}
+//
+//
+//	return 0;
+//}
+
+//for循环的注意事项
+//1不可在循环中改变i的值，常在==与=中错误
+//2一般写,<=符号而不写<符号
+
+
+
+
+
+
+//for循环的省略情况
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (;i <= 10;i++)
+//	{
+//		for (;j <= 10;j++)      //省略了就只会打印1变0-10，因为j那里循环一次后j=10，不满足条件跳出。加上就会有10遍0-10
+//		{
+//			printf("%d\n", j);
+//		}
+//	}
+//
+//
+//
+//	return 0;
+//}
