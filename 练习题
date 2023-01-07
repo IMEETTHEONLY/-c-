@@ -1,0 +1,60 @@
+//#include <stdio.h>			//打印100以内的单数
+//int main()
+//{
+//	int i = 0;
+//	while (i < 100)
+//	{
+//		if (i % 2 == 1)
+//		{
+//			printf("%d\n", i);
+//		}
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//#include <stdio.h>			//计算1！+2!+3!...10!
+//int main()
+//{	
+//	int i = 0;
+//	int n = 0;
+//	int sum = 1;
+//	int lhl = 0;
+//	scanf_s("%d", &n);
+//	for (n=1;n<=3;n++)
+//	{
+//		int sum = 1;
+//		for (i = 1;i <= n;i++)
+//		{
+//			 
+//			sum = sum * i;
+//
+//		}
+//		lhl = lhl+ sum;
+//	}
+//	printf("%d\n", lhl);
+//	return 0;
+//}
+
+
+
+
+#include <stdio.h>													//计算1！+2!+3!...10!优化版的练习题
+int main()
+{
+	int n = 0;
+	int ret = 1;
+	int sum = 0;
+	
+
+	for (n = 1;n <=10;n++)
+	{
+		ret = ret * n;
+		sum = sum + ret;
+		
+	}
+		printf("%d ", sum);
+
+	return 0;
+}
