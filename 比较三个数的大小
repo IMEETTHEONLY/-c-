@@ -1,0 +1,97 @@
+//#include <stdio.h>
+//
+//int ADD(inta, intb, intc)
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	if (a > b && b > c)
+//	{
+//		printf("a>b>c");
+//
+//	}
+//	else if (a > b && a > c && c > b)
+//	{
+//		printf("a>c>b");
+//	}
+//	else if (b > a && a > c)
+//	{
+//		printf("b>a>c");
+//
+//	}
+//	else if (b > a && b > c && c > a)
+//	{
+//		printf("b>c>a");
+//	}
+//	else if (c > a && a > b)
+//	{
+//		printf("c>a>b");
+//	}
+//	else if (a = b = c)
+//	{
+//		printf("err");
+//	}
+//	else
+//		printf("c>b>a");
+//	return(a, b, c);
+//}
+//
+//int main()
+//{
+//	ADD(9,8,7);
+//
+//
+//
+//
+//	return 0;
+//}
+ 
+
+//自己所写的错误代码
+
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	scanf("%d %d %d",& a, & b, & c);
+	//使a存储最大的值
+	//b存储次之
+	//c存储最小的值
+	if (a < b)
+	{
+		int tep = a;   //创建一个临时变量来储存a，使得原a位置不变而是值改变
+		a = b;
+		b = tep;
+
+	}
+	if (a < c)
+	{
+		int tep = a;
+		a = c;
+		c = tep;
+		if (b < c)
+		{
+			int tep = b;
+			c = b;
+			c = tep;
+
+
+	}
+		
+
+	    
+
+
+	}
+
+	printf("%d%d%d", a, b, c);
+
+
+
+	return 0;
+}
+//比较三个数的大小
