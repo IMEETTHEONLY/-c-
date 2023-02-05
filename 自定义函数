@@ -1,0 +1,17 @@
+include <stdio.h>														//用指针的方法自定义一个交换变量的函数
+void swap(int* pa, int* pb)
+{
+	int tmp = 0;
+	tmp = *pa;
+	*pa = *pb;
+	*pb = tmp;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	swap(&a, &b);
+	printf("a=%d b=%d\n", a, b);
+	return 0;
+}
