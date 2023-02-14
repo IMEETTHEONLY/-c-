@@ -15,3 +15,83 @@ int main()
 	printf("a=%d b=%d\n", a, b);
 	return 0;
 }
+
+
+
+///链式访问
+//#include <stdio.h>
+//int main()
+//{
+//	int len = 0;
+//	//1
+//	len = strlen("abc");			//将两个过程结合成一个就叫做链式访问
+//	printf("len=%d\n", len);
+//	//2
+//	printf("len=%d\n", strlen("abc"));
+//}
+
+
+
+//链式访问2
+//#include <stdio.h>
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 43)));
+//	//链式访问的基本形式，从内部开始，第一个printf打印出43，printf返回的是字符个数，即printf返回了2，相当于代码变成了printf("%d\n",2)
+//
+//
+//	return 0;
+//}
+
+
+
+#define _CRT_SECURE_NO_WARNINGS
+#ifndef __ADD_H__		//如果函数没有定义
+#define __ADD_H__		//定义一个函数
+//函数的声明				//这样就会减少函数占的空间，避免了二次定义
+int	ADD(int x, int y);
+
+
+#endif
+
+#define _CRT_SECURE_NO_WARNINGS
+int ADD(int x,int y)
+{
+	
+	
+	int z = x + y;
+	
+
+	return z;
+}
+
+//函数的声明和定义
+
+ //声明就是 函数的类型 名字 参数   例如 int add(intx,inty)
+//定义是{}的内容
+
+//用途：将声明和定义在不同的文件中去书写，有利于同时工作，不混淆内容
+
+//#include <stdio.h>
+//#include "add.h"
+//int main()
+//{
+//	int a = 20;
+//	int b = 30;
+//	int sum = 0;
+//	sum = ADD(a, b);
+//	printf("sum=%d\n", sum);
+//	return 0;
+//
+//
+//}
+
+
+
+
+
+
+
+
+
+
