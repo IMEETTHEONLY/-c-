@@ -1,0 +1,809 @@
+//#include <stdio.h>
+//int main()
+//{
+//	float r = 0.07;
+//	float p = 1;
+//	int n = 10;
+//	for (n = 1;n <= 10;n++)
+//	{
+//		p = p * (1 + r);
+//	}
+//	printf("%f\n", p);
+//}
+
+
+
+//#include <stdio.h>
+//#include <math.h>
+//int main()
+//{
+//	int d = 300000;
+//	int p = 6000;
+//	float r = 0.01;
+//	float m = 0;
+//	m = log(p / (p - d * r)) / log(1 + r);
+//	printf("%3.1f", m);
+//		return 0;
+//}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	char c1 = 'C', c2 = 'h', c3 = 'i', c4 = 'n', c5 = 'a';
+//	putchar(c1 + 4);
+//	putchar(c2 + 4);
+//	putchar(c3 + 4);
+//	putchar(c4 + 4);
+//	putchar(c5 + 4);
+//	putchar('\n');
+//	printf("%c%c%c%c%c\n", c1 + 4, c2 + 4, c3 + 4, c4 + 4, c5 + 4);
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{char c1,c2;
+//c1=getchar();
+//c2=getchar();
+//putchar(c1);
+//putchar(c1);
+//putchar('\n');
+//printf("%d%d\n", c1,c2);
+
+
+//{//1字符型和整型皆可
+////应该使用printf函数，getchar得到的是字符，putchar输出的也是字符，只有用printf的%d格式，可以将所得字符转换为对应的ASCⅡ码输出	
+////不是的，ASC码对应的整型取值范围在0~127，超过这个范围的字符将无法转换
+//
+//
+//
+//
+//
+	//r/*eturn 0;
+//}*/
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	char c1, c2;
+//	c1 = 197;
+//	c2 = 198;
+//	printf("%c%c\n", c1, c2);
+//
+//
+//
+//
+//
+//}
+
+
+
+//{
+//	float r ;
+//	int h ;
+//	scanf_s("%d%f", &h, &r);
+//	float C = 2 * 3.14 * r;
+//	float S1 = 4 * 3.14 * r * r;
+//	float S2 = 3.14 * r * r;
+//	float V = 4 / 3 * 3.14 * r * r * r;
+//	float V2 = S1 * h;
+//	printf("C=%4.2f S1=%4.2f S2=%4.2f V=%4.2f V2=%4.2f", C, S1, S2, V, V2);
+//}
+
+
+
+
+
+
+
+
+//#include <stdio.h>   
+//
+//
+//char fun(char ch)
+//{
+//
+//
+//	if (ch >= '0' && ch<='9')
+//
+//
+//		return  '9' - (ch - '0');
+//
+//	return  ch;
+//}
+//
+//int main()
+//{
+//	char  c1, c2;
+//
+//	printf("\nThe result  :\n");
+//
+//	c1 = '2';   c2 = fun(c1);
+//
+//	printf("c1=%c c2=%c\n", c1, c2);
+//
+//	c1 = '8';   c2 = fun(c1);
+//
+//	printf("c1=%c c2=%c\n", c1, c2);
+//
+//	c1 = 'a';   c2 = fun(c1);
+//
+//	printf("c1=%c c2=%c\n", c1, c2);
+//
+//	getchar();
+//
+//	return 0;
+//}
+
+
+
+
+
+
+//
+//#include <stdio.h>
+//    
+//char  fun(char  c)
+//
+//{
+//    if (c >= 'A' && c <= 'Z')
+//
+//        /**************found**************/
+//
+//        c = c + 32;
+//
+//    if (c >= 'a' && c <= 'u')
+//
+//        /**************found**************/
+//
+//        c = c + 5;
+//
+//    else if (c >= 'v' && c <= 'z')
+//
+//        c = c - 21;
+//
+//    return  c;
+//
+//}
+//
+//main()
+//
+//{
+//    char  c1, c2;
+//
+//    printf("\nEnter a letter(A-Z):  "); c1 = getchar();
+//
+//    if (isupper(c1))
+//
+//    {
+//        c2 = fun(c1);
+//
+//        printf("\n\nThe letter \'%c\' change to \'%c\'\n", c1, c2);
+//
+//    }
+//
+//    else  printf("\nEnter (A-Z)!\n");
+//
+//}
+
+
+
+
+//#include  <stdio.h>
+//
+//double fun(double  x, int  n)
+//
+//{
+//    double  f, t;      int  i;
+//
+//    f = 1.0;
+//
+//    /**********found**********/
+//
+//    t = 1.0;
+//
+//    /**********found**********/
+//
+//    for (i =1; i <= n; i++)
+//
+//    {
+//
+//        /**********found**********/
+//
+//        t *= x /i;
+//
+//        f += t;
+//
+//    }
+//
+//    return  f;
+//
+//}
+//
+//main()
+//
+//{
+//    double  x, y;
+//
+//    x = 2.5;
+//
+//    y = fun(x, 12);
+//
+//    printf("\nThe result is :\n");
+//
+//    printf("x=%-12.6f     y=%-12.6f\n", x, y);
+//
+//}
+
+
+
+
+
+//#include <conio.h>
+//
+//#include <stdio.h>
+//
+//void fun(int m, int k)
+//
+//{
+//
+//    int aa[20], i;
+//
+//    for (i = 0; m; i++)
+//
+//    {
+//
+//        /**********found**********/
+//
+//        aa[i] = m % k;
+//
+//        m /= k;
+//
+//    }
+//
+//    for (; i; i--)
+//
+//        /**********found**********/
+//
+//        printf("%d", aa[i-1]);
+//
+//}
+//
+//
+//
+//main()
+//
+//{
+//
+//    int b, n;
+//
+//    printf("\nPlease enter a number and a base:\n");
+//
+//    scanf_s("%d %d", &n, &b);
+//
+//    fun(n, b);
+//
+//    printf("\n");
+//
+//    getchar();
+//
+//}
+
+
+
+
+
+//#include <stdio.h>
+//
+//double fun(int  n)
+//
+//{
+//	int i = 1;
+//	int sign = 1;
+//	double pi = 0.0,  term = 1.0;
+//	for (i = 2;i < n;i++)
+//	{
+//
+//		pi = pi + term;
+//		sign = -sign;
+//		term = 1 / i;
+//
+//
+//
+//	}
+//	return pi;
+//}
+//
+//main()
+//
+//{
+//	int  n;    double  s;
+//
+//	printf("\nInput n:  ");  scanf_s("%d", &n);
+//
+//	s = fun(n);
+//
+//	printf("\ns=%f\n", s);
+//
+//}
+
+
+
+
+
+//#include <stdio.h>
+//
+//#include <stdio.h>
+//
+//double  fun(double  eps)
+//
+//{
+//	double s = 1.0, s1 = 1.0;
+//	int n = 1;
+//	while (s1 >= eps)
+//	{
+//		s1 = s1 * n/(2 * n+1);
+//		s = s + s1;
+//		n++;
+//	}
+//	return 2 * s;
+//
+//
+//}
+//
+//
+//
+//main()
+//
+//{
+//	double  x;
+//
+//	printf("Input eps:");
+//
+//	scanf_s("%lf", &x); printf("\neps = %lf, PI=%lf\n", x, fun(x));
+//
+//	getchar();
+//
+//}
+
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int i=0,j=0;
+//	for (i = 1;i <= 100;i++)
+//	{
+//		for (j = 2;j <= i;j++)
+//		{
+//			if (i % j == 0)
+//			{
+//
+//				break;
+//			}
+//
+//		}
+//		if (i == j)
+//		{
+//			printf("%d ", i);
+//
+//		}
+//	}
+//	return 0;
+//	
+//
+//}
+//
+//
+//
+
+
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int i = 0;
+//	int a[10] = {1,4,6,8,9};
+//	
+//	scanf_s("%d",&a[5]);
+//	for (i=0;i <= 5;i++)
+//		
+//	{	
+//		if (a[5] < a[i])
+//		{
+//			int t;
+//			t = a[i];
+//			a[i]=a[5];
+// 
+//			a[5] = t;
+//		}
+//	}
+//
+//	for (i = 0;i <= 5;i++)
+//	{
+//		printf("%d\n", a[i]);
+//	}
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//
+//	int a[15] = { 15,14,13,12,11,10,9,8,7,6,5,4,3,2,1 };
+//	int i=0,b = 0;
+//	scanf_s("%d", &b);
+//	int sz = sizeof(a) / sizeof(a[0]);
+//	int left = 0;
+//	int right = sz - 1;
+//	
+//	while (left <=right)
+//	{
+//		int mid = (right + left) / 2;
+//		if (a[mid] < b)
+//		{
+//			right = mid - 1;
+//		}
+//		else if (a[mid] > b)
+//		{
+//
+//			left = mid + 1;
+//
+//		}
+//		else
+//		{
+//			printf("找到了，这个数的下标是：%d\n", mid);
+//			break;
+//		}
+//
+//	}
+//
+//	if (left > right)
+//	{
+//		printf("无此数");
+//	}
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	int i = 0, j = 0;
+//	char s1[100] = { 0 };
+//	char s2[100] = { 0 };
+//	gets(s1);
+//	gets(s2);
+//	while (s1[i] != '\0')
+//	{
+//		i++;
+//	}
+//	while(s2[j] != '\0')
+//	{
+//		s1[i++] = s2[j++];
+//	}
+//	s1[i] = '\0';
+//	puts(s1);
+//
+//
+//	return 0;
+//}
+
+
+
+
+//		#include <stdio.h>
+//
+//double fun(double x[], int n)
+//
+//{
+//	int i, k = 0;
+//
+//	double avg = 0.0, sum = 0.0;
+//
+//	for(i = 0; i < n; i++)
+//
+//		avg += x[i];
+//
+//	/**********************found***********************/
+//
+//	  avg = avg/12;
+//
+//		for(i=0;i<12;i++)
+//
+//		if(x[i]>avg)
+//
+//	{
+//
+//		/**********************found***********************/
+//			sum += x[i];
+//				k++;
+//
+//	}
+//		
+//	/**********************found***********************/
+//		sum = sum / k;
+//	return sum;
+//
+//}
+//
+//int main()
+//
+//{
+//	double score[12] = {50,60,70,80,90,100,55,65,75,85,95,99};
+//
+//	double aa;
+//
+//	aa = fun(score,12);
+//
+//	printf("%f\n", aa);
+//
+//}
+//
+
+
+
+
+//#include <stdio.h>
+//
+//#include <string.h>
+//
+//void fun(char t[])
+//
+//{
+//
+//    char c;
+//
+//    int  i, j;
+//
+//    /**********found***********/
+//
+//    for (i = strlen(t)-1; i; i--)
+//
+//        for (j = 0; j < i; j++)
+//
+//            /**********found***********/
+//
+//            if (t[j] > t[j+1])
+//
+//            {
+//                c = t[j];
+//                t[j] = t[j+1];
+//                t[j+1] = c;
+//               
+//
+//            }
+//
+//}
+//
+//
+//
+//main()
+//
+//{
+//
+//    char s[81];
+//
+//    printf("\nPlease enter a character string: ");
+//
+//    gets(s);
+//
+//    printf("\n\nBefore sorting:\n  \"%s\"", s);
+//
+//    fun(s);
+//
+//    printf("\nAfter sorting decendingly:\n  \"%s\"\n", s);
+//
+//    getchar();
+//
+//}
+
+
+
+
+//#include <stdio.h>
+//
+//#include <stdio.h>
+//
+//#define N 5
+//
+//void fun(int a[][N], int m)
+//
+//{
+//	int i = 0; int j = 0;
+//	for(i=0;i<5;i++)
+//		for (j = 0;j < 5 - i;j++)
+//		{
+//			a[i][4-j] = m * a[i][4-j];
+//		}
+//
+//
+//}
+//
+//
+//
+//main()
+//
+//{
+//	int a[N][N], m, i, j;
+//
+//	printf("***** The array *****\n");
+//
+//	for (i = 0;i <N; i++)
+//
+//	{
+//		for (j = 0; j < N; j++)
+//
+//		{
+//			a[i][j] = rand() % 20; printf("%4d", a[i][j]);
+//		}
+//
+//		printf("\n");
+//
+//	}
+//
+//	do m = rand() % 10; while(m >= 3);
+//
+//	printf("m = %4d\n", m);
+//
+//	fun(a, m);
+//
+//	printf("THE  RESULT\n");
+//
+//
+//
+//	for (i = 0;i < N; i++)
+//
+//	{
+//		for(j = 0; j < N; j++) printf("%4d", a[i][j]);
+//
+//		printf("\n");
+//
+//	}
+//
+//
+//	getchar();
+//
+//}
+//
+
+
+
+//#include <stdio.h>
+//void fun(int array[3][3])
+//{
+//	int i, j, m = 0;
+//	for(i=0;i<2;i++)
+//		for (j = i + 1;j < 3;j++)
+//		{
+//			m = array[i][j];
+//			array[i][j] = array[j][i];
+//			array[j][i] = m;
+//		}
+//}
+//
+//main()
+//
+//{
+//
+//	int i, j;
+//
+//	int array[3][3] = { {100,200,300},
+//
+//					  {400,500,600},
+//
+//					{700,800,900} };
+//
+//
+//
+//	for (i = 0;i < 3;i++)
+//
+//	{
+//		for (j = 0;j < 3;j++)
+//
+//			printf("%7d", array[i][j]);
+//
+//		printf("\n");
+//
+//	}
+//
+//	fun(array);
+//
+//	printf("Converted array:\n");
+//
+//	for (i = 0;i < 3;i++)
+//
+//	{
+//		for (j = 0;j < 3;j++)
+//
+//			printf("%7d", array[i][j]);
+//
+//		printf("\n");
+//
+//	}
+//
+//	getchar();
+//
+//}
+//
+
+
+//int P(int x, int y)
+//{
+//	int m = 0;
+//	if (x == 0)
+//	{
+//		return 0;
+//	}
+//	if (x == 1)
+//	{
+//		return y;
+//	}
+//	if (x >= 1)
+//	{
+//		return  m = (2 * x - 1) * y - P(x - 1, y) - (x - 1) * P(x - 2, y) / x;
+//	}
+//	
+//}
+//
+//#include <stdio.h>
+//int main()
+//{
+//	int n, x = 0;
+//	printf("请输入n与x的值>:\n");
+//	scanf_s("%d%d", &n, &x);
+//	printf("%d",P(n, x));
+//
+//
+//
+//
+//
+//
+//
+//}
+
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//void fun(int x)
+//{
+//	int i = 0, j = 0;
+//	i = x % 10;
+//	j = x / 10;
+//	if (j > 0)
+//	{
+//		fun(j);
+//	}
+//	printf("%c ", i + '0');
+//}
+//
+//
+//int main()
+//{
+//	int a=0;
+//	printf("请输入一个整数>:\n");
+//	scanf_s("%d", &a);
+//	fun(a);
+//	return 0;
+//}
